@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <title>simple crystal game</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+
+<body>
+   <!-- <div class="jumbotron jumbotron-fluid"> -->
+   <div class="container">
+      <h1 class="display-3" style="margin-top: 15px; color: #2162b0;"><b>Guess this number: <span id="number-to-guess"></span></b></h1>
+      <p class="lead" style="margin-top: 0px; font-size: 14px;">Each crystal represents a different value. Add up your values until you reach the desired number. </p>
+      <p class="lead" style="color: red; margin-top: 0px; font-size: 14px;">Note: New values for crystals only function is the page is reloaded. Everything else is functional.</p>
+   </div>
+   </div>
+   <!-- ===================== -->
+
+
+   <!-- Note that this div is now empty. We will fill it dynamically -->
+   <div id="crystals" style="text-align: center;"></div>
+
+
+   <div class="alert alert-primary" style="margin-bottom: 0px; font-weight: bold; font-size: 30px;" role="alert" id="pointsCounter">New score : 0</div>
+   <div class="alert alert-success" style="margin-bottom: 0px;" role="alert" id="wins">
+      <p>You've won 0 times!</p>
+   </div>
+   <div class="alert alert-danger" role="alert" id="loss">You've lost 0 times!</div>
+   <div id="reset"> </div>
+
+   <!-- JAVASCRIPT  -->
+   <!-- ========================================= -->
+
+   <script type="text/javascript" src="./assets/javascript/game.js"></script>
+</body>
+</html>
